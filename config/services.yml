@@ -1,0 +1,14 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  Emag\:
+    resource: '../src/*'
+    exclude: '../src/*{Model, Exception}'
+
+  Emag\ConsoleCommand\BattleCommand:
+    public: true
+
+

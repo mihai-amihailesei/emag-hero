@@ -1,0 +1,16 @@
+- type: Hero
+  name: Orderus
+  health_range: [ 70, 100 ]
+  strength_range: [ 70, 80 ]
+  defense_range: [ 45, 55 ]
+  speed_range: [ 40, 50 ]
+  luck_range: [ 10, 30 ]
+  attack_skill: Rapid Strike
+  defense_skill: Magic Shield
+- type: Beast
+  name: Wild Beast
+  health_range: [ 60, 90 ]
+  strength_range: [ 60, 90 ]
+  defense_range: [ 40, 60 ]
+  speed_range: [ 40, 60 ]
+  luck_range: [ 25, 40 ]

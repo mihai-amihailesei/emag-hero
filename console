@@ -1,0 +1,24 @@
+#!/usr/bin/php
+<?php
+
+use Emag\ConsoleCommand\BattleCommand;
+use Symfony\Component\DependencyInjection;
+use Symfony\Component\Config;
+use Symfony\Component\Console;
+
+require __DIR__.'/vendor/autoload.php';
+
+define('ROOT_DIR', getcwd());
+
+$container = new DependencyInjection\ContainerBuilder();
+$loader = new DependencyInjection\Loader\YamlFileLoader(
+    $container,
+    new Config\FileLocator(__DIR__.'/config/')
+);
+$loader->load('services.yml');
+$container->compile();
+
+$application = new Console\Application('emag Recruitment Hero game.');
+$application->add($container->get(BattleCommand::class));
+
+$application->run();

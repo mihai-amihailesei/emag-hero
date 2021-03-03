@@ -1,0 +1,10 @@
+- type: attack
+  action: rapid_strike
+  name: Rapid Strike
+  description: Strike twice when it's your turn to attack
+  activation_rate: 10
+- type: defense
+  action: magic_shield
+  name: Magic Shield
+  description: Only take half the damage this turn
+  activation_rate: 20

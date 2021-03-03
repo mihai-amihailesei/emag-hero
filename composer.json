@@ -1,0 +1,28 @@
+{
+    "name": "mihai/emag-hero",
+    "description": "Emag recruitment coding test",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mihai Amihailesei",
+            "email": "mihai.amihailesei28@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Emag\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "EmagTest\\": "test/"
+        }
+    },
+    "require": {
+        "symfony/console": "^5.2",
+        "symfony/dependency-injection": "^5.2",
+        "symfony/config": "^5.2",
+        "symfony/yaml": "^5.2"
+    }
+}
